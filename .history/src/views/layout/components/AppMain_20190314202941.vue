@@ -32,8 +32,9 @@ export default {
 .app-main {
   /*50 = navbar  */
   height: calc(100vh - 50px - 34px);
+  height: 100%;
   position: relative;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }

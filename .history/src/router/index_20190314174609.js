@@ -52,19 +52,19 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/system/user',
     name: 'system',
-    meta: { title: 'system', icon: 'user' },
+    meta: { title: 'system', icon: 'system' },
     children: [
       {
         path: 'user',
         name: 'user',
         component: () => import('@/views/system/user'),
-        meta: { title: 'user' }
+        meta: { title: 'user', icon: 'user' }
       },
       {
         path: 'role',
         name: 'role',
         component: () => import('@/views/system/role'),
-        meta: { title: 'role' }
+        meta: { title: 'role', icon: 'role' }
       }
     ]
   },
